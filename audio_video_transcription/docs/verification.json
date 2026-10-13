@@ -1,0 +1,186 @@
+{
+  "tests_run": 43,
+  "passed": 43,
+  "skipped": 0,
+  "errors": 0,
+  "failures": 0,
+  "elapsed_seconds": 2.227,
+  "python": "3.12.14",
+  "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+  "scope": "Real FFmpeg preprocessing and silence detection; simulated recognition and VAD dependency contracts; no real Whisper inference, microphone device, or Qt UI test.",
+  "source_format_checks": "Every Python module has one English comment on line 1 and no docstrings or inline comments.",
+  "cases": [
+    {
+      "test": "test_adapters.AdapterTests.test_registry_rejects_duplicate_name",
+      "status": "passed"
+    },
+    {
+      "test": "test_adapters.AdapterTests.test_registry_requires_contract",
+      "status": "passed"
+    },
+    {
+      "test": "test_adapters.AdapterTests.test_silero_sample_timestamps_preserve_precision",
+      "status": "passed"
+    },
+    {
+      "test": "test_adapters.AdapterTests.test_whisper_options_and_model_reuse",
+      "status": "passed"
+    },
+    {
+      "test": "test_adapters.AdapterTests.test_whisper_reloads_for_new_compute_device",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.FallbackTests.test_cpu_memory_failure_selects_smaller_model",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.FallbackTests.test_output_failure_does_not_change_recognition",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.FallbackTests.test_unknown_config_key_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_cuda_failure_switches_to_cpu_within_retry_budget",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_ffmpeg_silence_detection_returns_empty_intervals",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_missing_input_uses_same_retry_budget",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_output_failure_reuses_recognition",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_pipeline_failure_emits_one_terminal_event",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_pipeline_success_on_third_retry_reuses_audio",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_preprocessor_produces_mono_16k",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_real_video_audio_track_is_extracted",
+      "status": "passed"
+    },
+    {
+      "test": "test_pipeline.PipelineTests.test_video_without_audio_track_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_complete_words_split_on_pause",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_full_text_mismatch_is_reported",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_full_text_without_segments_is_retained",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_invalid_time_preserves_text",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_long_leading_silence_is_corrected",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_missing_words_preserve_earliest_speech",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_overlap_buffer_is_trimmed",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_partial_words_do_not_drop_text",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.AlignmentTests.test_unicode_and_english_spacing",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.SubtitleTests.test_invalid_timestamp_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.SubtitleTests.test_srt_roundtrip",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.SubtitleTests.test_submillisecond_segment_is_rejected",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.SubtitleTests.test_timestamp_carry",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.WriterTests.test_output_bundle_and_metadata",
+      "status": "passed"
+    },
+    {
+      "test": "test_postprocessing.WriterTests.test_partial_commit_restores_existing_files",
+      "status": "passed"
+    },
+    {
+      "test": "test_retry.RetryTests.test_callback_failure_does_not_abort_processing",
+      "status": "passed"
+    },
+    {
+      "test": "test_retry.RetryTests.test_cancel_before_processing",
+      "status": "passed"
+    },
+    {
+      "test": "test_retry.RetryTests.test_cancel_during_retry_wait",
+      "status": "passed"
+    },
+    {
+      "test": "test_retry.RetryTests.test_initial_failure_and_three_retries",
+      "status": "passed"
+    },
+    {
+      "test": "test_retry.RetryTests.test_success_on_first_attempt",
+      "status": "passed"
+    },
+    {
+      "test": "test_retry.RetryTests.test_success_on_last_retry",
+      "status": "passed"
+    },
+    {
+      "test": "test_vad.VadTests.test_all_backends_unavailable",
+      "status": "passed"
+    },
+    {
+      "test": "test_vad.VadTests.test_backend_exception_uses_next_detector",
+      "status": "passed"
+    },
+    {
+      "test": "test_vad.VadTests.test_ffmpeg_failure_is_not_entire_media_speech",
+      "status": "passed"
+    },
+    {
+      "test": "test_vad.VadTests.test_interval_clipping_merging_and_invalid_values",
+      "status": "passed"
+    },
+    {
+      "test": "test_vad.VadTests.test_valid_silence_does_not_invoke_energy_fallback",
+      "status": "passed"
+    }
+  ]
+}

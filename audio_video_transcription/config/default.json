@@ -1,0 +1,35 @@
+{
+  "output_dir": "output",
+  "ffmpeg_dir": null,
+  "model_size": "medium",
+  "model_cache": null,
+  "engine": "whisper",
+  "device": "auto",
+  "language": null,
+  "task": "transcribe",
+  "simplified_chinese": true,
+  "word_gap": 0.28,
+  "end_padding": 0.2,
+  "process_timeout": 600.0,
+  "max_duration": 0.0,
+  "retry_delay": 1.0,
+  "retry_backoff": 2.0,
+  "retry_max_delay": 4.0,
+  "recording_duration": 30.0,
+  "microphone_device": null,
+  "vad": {
+    "backends": [
+      "silero",
+      "webrtc",
+      "ffmpeg"
+    ],
+    "threshold": 0.65,
+    "min_speech_ms": 120,
+    "min_silence_ms": 180,
+    "merge_gap": 0.16,
+    "min_duration": 0.12,
+    "webrtc_aggressiveness": 3,
+    "silence_noise_db": -38.0,
+    "silence_duration": 0.3
+  }
+}

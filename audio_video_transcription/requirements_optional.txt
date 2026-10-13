@@ -1,0 +1,4 @@
+silero-vad
+webrtcvad-wheels
+sounddevice
+PySide6

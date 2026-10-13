@@ -1,0 +1,4 @@
+numpy
+torch
+openai-whisper
+opencc-python-reimplemented

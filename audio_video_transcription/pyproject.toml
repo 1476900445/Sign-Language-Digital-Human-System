@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-video-transcription"
+version = "1.0.0"
+description = "Audio/video transcription with VAD, modular adapters, and three retries"
+requires-python = ">=3.9"
+dependencies = ["numpy", "torch", "openai-whisper", "opencc-python-reimplemented"]
+
+[project.optional-dependencies]
+vad = ["silero-vad", "webrtcvad-wheels"]
+microphone = ["sounddevice"]
+qt = ["PySide6"]
+
+[project.scripts]
+av-transcribe = "run:main"
+
+[tool.setuptools]
+py-modules = ["run", "audio_video_transcription"]
+
+[tool.setuptools.packages.find]
+include = ["transcription*"]

@@ -1,0 +1,7 @@
+{
+  "project": "audio_video_transcription",
+  "version": "1.0.0",
+  "retry_count": 3,
+  "maximum_attempts": 4,
+  "third_party_weights_bundled": false
+}
